@@ -1,5 +1,9 @@
-<script>
-    export let data
+<script lang="ts">
+    export let data;
 </script>
 
-<p class="text-bold">{data.content}</p> 
+<div>
+  {#each data.names as { name }}
+    <div class="font-bold">{name}</div>
+  {/each}
+</div>
